@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todolist-container">
+            <div class="done-list">
+                <div class="text-list">выполненные задания <br> нажми на кнопку <br>↓</div>
+                <button class="bone-button">
+                    <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#66BB6A"/>
+                        <path d="M30 50L42 63L70 35" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
+            </div>
+            <h1>To Do List</h1>
+            <form action="#">
+                <input type="text" class="input-list" placeholder="Enter your task"> <button class="btn">ADD</button>
+            </form>
+            <ul class="list">
+                
+            </ul>
+        </div>
+        <div class="modal-done-list displaynone">
+            <button class="close">❌</button>
+            <div class="errorItem" style="text-align: center; color: green; font-size: 30px; font-weight: 700;">Все выполненные задания:</div>
+            <div class="container">
+            <ul class="dones-list">
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>    
+</body>
+</html>
